@@ -7,21 +7,12 @@ calculator.py
 
 One function per operation, in order.
 """
-
-def square_root(a):
-    if a < 0:
-        raise ValueError("Value for square root must be greater than 0.")
-    return math.sqrt(a)    #raise ValueError if a < 0
-
-def hypotenuse(a,b):
-   return math.hypot(a,b) # can have negative nums
-
 # First example
 def add(a, b): 
     return a+b
 
 #Function to subtract
-def sub(a, b):
+def subtract(a, b):
     return a-b 
 
 #function to multiply
@@ -35,7 +26,7 @@ def div(a,b):
     return b/a
 
 # function to calculate logarithm of b to the base of a with error handling
-def log(a, b):
+def logarithm(a, b):
     if a<= 0 or a == 1:
         raise ValueError("Logarithmic base must be greater than 0 and not equal to 1.")
     if b <= 0:
@@ -44,4 +35,10 @@ def log(a, b):
 def exp(a, b):
     return a ** b
 
+def square_root(a):
+    if a < 0:
+        raise ValueError("Value for square root must be greater than 0.")
+    return math.sqrt(a)    #raise ValueError if a < 0
 
+def hypotenuse(a,b):
+   return math.hypot(a,b) # can have negative nums
