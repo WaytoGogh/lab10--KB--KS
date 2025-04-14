@@ -19,31 +19,31 @@ class TestCalculator(unittest.TestCase):
 
     # Partner 1
     def test_multiply(self): # 3 assertions
-        self.assert isinstance(a, str)
-        self.assert isinstance(a, list)
-        self.assert isinstance(a, dict)
-        self.assert isinstance(a, set)
-        self.assert isinstance(a, tuple)
-        self.assert isinstance(b, str)
-        self.assert isinstance(b, list)
-        self.assert isinstance(b, dict)
-        self.assert isinstance(b, set)
-        self.assert isinstance(b, tuple)
+        self.assertIsInstance(a, str)
+        self.assertIsInstance(a, list)
+        self.assertIsInstance(a, dict)
+        self.assertIsInstance(a, set)
+        self.assertIsInstance(a, tuple)
+        self.assertIsInstance(b, str)
+        self.assertIsInstance(b, list)
+        self.assertIsInstance(b, dict)
+        self.assertIsInstance(b, set)
+        self.assertIsInstance(b, tuple)
         self.assertEqual(mul(25, 2), 50)
         self.assertEqual(mul(1, 2), 2)
         self.assertEqual(mul(10, 50), 500)
 
     def test_divide(self): # 3 assertions
-        self.assert isinstance(a, str)
-        self.assert isinstance(a, list)
-        self.assert isinstance(a, dict)
-        self.assert isinstance(a, set)
-        self.assert isinstance(a, tuple)
-        self.assert isinstance(b, str)
-        self.assert isinstance(b, list)
-        self.assert isinstance(b, dict)
-        self.assert isinstance(b, set)
-        self.assert isinstance(b, tuple)
+        self.assertIsInstance(a, str)
+        self.assertIsInstance(a, list)
+        self.assertIsInstance(a, dict)
+        self.assertIsInstance(a, set)
+        self.assertIsInstance(a, tuple)
+        self.assertIsInstance(b, str)
+        self.assertIsInstance(b, list)
+        self.assertIsInstance(b, dict)
+        self.assertIsInstance(b, set)
+        self.assertIsInstance(b, tuple)
         self.assertEqual(mul(10, 50), 5)
         self.assertEqual(mul(10, 500), 50)
         self.assertEqual(mul(10, 20), 2)
@@ -60,6 +60,16 @@ class TestCalculator(unittest.TestCase):
         self.assertAlmostEqual(log(math.e, math.e**3),3)
 
     def test_log_invalid_base(self): # 1 assertion
+        self.assertIsInstance(a, str)
+        self.assertIsInstance(a, list)
+        self.assertIsInstance(a, dict)
+        self.assertIsInstance(a, set)
+        self.assertIsInstance(a, tuple)
+        self.assertIsInstance(b, str)
+        self.assertIsInstance(b, list)
+        self.assertIsInstance(b, dict)
+        self.assertIsInstance(b, set)
+        self.assertIsInstance(b, tuple)
         with self.assertRaises(ValueError):
             log(1, 10)
     ##########################
@@ -72,14 +82,40 @@ class TestCalculator(unittest.TestCase):
         pass
 
     def test_hypotenuse(self): # 3 assertions
-        pass
+        self.assertIsInstance(a, str)
+        self.assertIsInstance(a, list)
+        self.assertIsInstance(a, dict)
+        self.assertIsInstance(a, set)
+        self.assertIsInstance(a, tuple)
+        self.assertIsInstance(b, str)
+        self.assertIsInstance(b, list)
+        self.assertIsInstance(b, dict)
+        self.assertIsInstance(b, set)
+        self.assertIsInstance(b, tuple)
+        self.assertAlmostEqual(hypotenuse(2, 3), 3.605)
+        self.assertAlmostEqual(hypotenuse(10, 20), 22.361)
+        self.assertAlmostEqual(hypotenuse(9, 45), 45.891)
 
     def test_sqrt(self): # 3 assertions
+        self.assertIsInstance(a, str)
+        self.assertIsInstance(a, list)
+        self.assertIsInstance(a, dict)
+        self.assertIsInstance(a, set)
+        self.assertIsInstance(a, tuple)
+        self.assertIsInstance(b, str)
+        self.assertIsInstance(b, list)
+        self.assertIsInstance(b, dict)
+        self.assertIsInstance(b, set)
+        self.assertIsInstance(b, tuple)
+        self.assertEqual(square_root(9), 3.0)
+        self.assertEqual(square_root(144), 12.0)
+        self.assertAlmostEqual(square_root(35), 5.916)
+        self.assertAlmostEqual(square_root(71), 8.426)
         # Test for invalid argument, example:
         # with self.assertRaises(<INSERT_ERROR_TYPE>):
         #    square_root(NUM)
         # Test basic function
-        pass
+
     ##########################
 
 # Do not touch this
