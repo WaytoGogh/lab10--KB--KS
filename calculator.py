@@ -1,4 +1,6 @@
 # https://github.com/WaytoGogh/lab10--KB--KS
+#Partner 1: Kai Belew
+#Partner 2: Kezia Saint
 import math
 
 """
