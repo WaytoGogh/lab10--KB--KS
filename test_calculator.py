@@ -94,9 +94,9 @@ class TestCalculator(unittest.TestCase):
         # self.assertIsInstance(b, dict)
         # self.assertIsInstance(b, set)
         # self.assertIsInstance(b, tuple)
-        self.assertAlmostEqual(hypotenuse(2, 3), 3.605)
-        self.assertAlmostEqual(hypotenuse(10, 20), 22.361)
-        self.assertAlmostEqual(hypotenuse(9, 45), 45.891)
+        self.assertAlmostEqual(hypotenuse(2, 3), 3.605551275463989293)
+        self.assertAlmostEqual(hypotenuse(10, 20), 22.360679774997896)
+        self.assertAlmostEqual(hypotenuse(9, 45), 45.8911756223350634)
 
     def test_sqrt(self): # 3 assertions
         # self.assertIsInstance(a, str)
@@ -111,8 +111,8 @@ class TestCalculator(unittest.TestCase):
         # self.assertIsInstance(b, tuple)
         self.assertEqual(square_root(9), 3.0)
         self.assertEqual(square_root(144), 12.0)
-        self.assertAlmostEqual(square_root(35), 5.916)
-        self.assertAlmostEqual(square_root(71), 8.426)
+        self.assertAlmostEqual(square_root(35), 5.916079783099616)
+        self.assertAlmostEqual(square_root(71), 8.426149773176358)
         # Test for invalid argument, example:
         # with self.assertRaises(<INSERT_ERROR_TYPE>):
         #    square_root(NUM)
