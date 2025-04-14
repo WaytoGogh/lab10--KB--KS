@@ -1,4 +1,4 @@
-#Edits done by Kezia Saint-Hilaire
+# https://github.com/WaytoGogh/lab10--KB--KS
 import math
 
 """
