@@ -13,14 +13,14 @@ class TestCalculator(unittest.TestCase):
 
 
     def test_subtract(self): # 3 assertions
-        self.assertEqual(sub(5,2,), 3)
-        self.assertEqual(sub(0,3), -3)
-        self.assertEqual(sub(-1, -2), 1)
+        self.assertEqual(subtract(5,2,), 3)
+        self.assertEqual(subtract(0,3), -3)
+        self.assertEqual(subtract(-1, -2), 1)
 
     ##########################
 
     # Partner 1
-    def test_multiply(self, a): # 3 assertions
+    def test_multiply(self): # 3 assertions
         # self.assertIsInstance(a, str)
         # self.assertIsInstance(a, list)
         # self.assertIsInstance(a, dict)
