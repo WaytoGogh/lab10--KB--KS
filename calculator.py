@@ -35,7 +35,4 @@ def log(a, b):
 def exp(a, b):
     return a ** b
 
-if __name__ == "__main__":
-    print("Testing add(2, 3):", add(2, 3))
-    print("Testing sub(5, 1):", sub(5, 1))
 
