@@ -19,10 +19,34 @@ class TestCalculator(unittest.TestCase):
 
     # Partner 1
     def test_multiply(self): # 3 assertions
-        pass
+        self.assert isinstance(a, str)
+        self.assert isinstance(a, list)
+        self.assert isinstance(a, dict)
+        self.assert isinstance(a, set)
+        self.assert isinstance(a, tuple)
+        self.assert isinstance(b, str)
+        self.assert isinstance(b, list)
+        self.assert isinstance(b, dict)
+        self.assert isinstance(b, set)
+        self.assert isinstance(b, tuple)
+        self.assertEqual(mul(25, 2), 50)
+        self.assertEqual(mul(1, 2), 2)
+        self.assertEqual(mul(10, 50), 500)
 
     def test_divide(self): # 3 assertions
-        pass
+        self.assert isinstance(a, str)
+        self.assert isinstance(a, list)
+        self.assert isinstance(a, dict)
+        self.assert isinstance(a, set)
+        self.assert isinstance(a, tuple)
+        self.assert isinstance(b, str)
+        self.assert isinstance(b, list)
+        self.assert isinstance(b, dict)
+        self.assert isinstance(b, set)
+        self.assert isinstance(b, tuple)
+        self.assertEqual(mul(10, 50), 5)
+        self.assertEqual(mul(10, 500), 50)
+        self.assertEqual(mul(10, 20), 2)
     ##########################
 
     # Partner 2
